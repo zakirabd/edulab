@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Header from './components/header/Header'
+import HeaderSection from './components/sections/HeaderSection'
+import PromotionsSection from './components/sections/PromotionsSection'
+import WhoWeAreSection from './components/sections/WhoWeAreSection'
+import AdvantagesSection from './components/sections/AdvantagesSection'
+import BenefitsSection from './components/sections/BenefitsSection'
+import TrainingSection from './components/sections/TrainingSection'
+import TrainerSection from './components/sections/TrainerSection'
+import Footer from './components/sections/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <HeaderSection />
+        <PromotionsSection />
+        <WhoWeAreSection />
+        <AdvantagesSection />
+        <BenefitsSection />
+        <TrainingSection />
+        <TrainerSection />
+        <Footer />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
